@@ -1,7 +1,9 @@
 public class ExampleException {
-  public static int rectangleArea(int a, int b) {
+  public static int rectangleArea(int a, int b) throws IllegalArgumentException {
     // TODO put your code here
-    return 0;
+    if(a <0 || b  < 0)
+      throw new IllegalArgumentException("Input value is below zero!");
+    return a * b;
   }
 }
 

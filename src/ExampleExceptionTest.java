@@ -14,9 +14,12 @@ public class ExampleExceptionTest {
   @DataProvider(name = "data")
   public static Object[][] data() {
     return new Object[][]{
-        {2, 2, 4},
-        {2, 3, 6}
+            {2, 2, 4},
+            {2, 3, 6},
+            {1, 1, 1},
+            {0, 100, 0}
         // TODO add 2 more test data here
+
     };
   }
 
@@ -29,7 +32,9 @@ public class ExampleExceptionTest {
   public static Object[][] negativeData() {
     return new Object[][]{
         {-2, 2},
-        {2, -2}
+        {2, -2},
+            {-3, 3},
+            {-1, 0}
         // TODO add 2 more test data here
     };
   }
